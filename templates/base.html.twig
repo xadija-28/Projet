@@ -23,7 +23,7 @@
         <h2 class="logo">E-portfo <span>lio</span></h2>
         <ul>
           <li><a href="#">Acceuil</a></li>
-          <li><a href="#">Cv</a></li>
+          <li><a href="/Cv">Cv</a></li>
           <li><a href="#">Portfolio </a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -37,10 +37,9 @@
     </div>
 
     <div class="container">{% block body %}{% endblock %}</div>
-    <style>
-      		.menu
+    <style>.menu
       {
-
+      
           height: 100vh;
           width:100%;
           background-color:;
@@ -54,12 +53,12 @@
        font-family: 'Josefin Sans' ,sans-serif;
        box-sizing: border-box;
        background-color: ;
-
-
+      
+      
       }
       nav
       {
-
+      
           display:flex;
           align-items: center;
           justify-content: space-between;
@@ -78,14 +77,14 @@
        color:rgba(174, 41, 174, 0.8) ;
        text-decoration:  none;
       text-transform: capitalize;
-
+      
       }
       nav ul li  a:hover
       { color:  #fd04a27e;
-
+      
       }
-
-
+      
+      
       .logo
       {
           color:;
@@ -93,14 +92,14 @@
           letter-spacing: 0.01px;
           cursor: pointer;
           transition: 4s;
-
+      
       }
       span
       {
       color:rgba(174, 41, 174, 0.8);
       text-decoration:  none;
       text-transform: capitalize;
-
+      
       }
       .btn
       {
@@ -115,14 +114,38 @@
        position: relative;
        left: 10%;
        box-shadow:  0px 0px 5px #000,0px 0px 15px #858585;
-
+      
       }
+      .btncv
+      {
+          color: white;
+          background-color:rgba(174, 41, 174, 0.8);
+          text-decoration: none;
+          border: 2px solid transparent;
+          font-weight: bold;
+          padding: 5px 10px ;
+          border-radius: 15px ;
+          transition: transform .4s;
+          position: relative;
+          left:85%;
+          top: -2%;
+          box-shadow:  0px 0px 5px #000,0px 0px 15px #858585;  
+          
+      }
+      
+      .btncv:hover {
+          background-color: #f700f7; /* Couleur différente au survol */
+          color: #ffffff; /* Couleur du texte différente au survol */
+          cursor: pointer; /* Curseur de type main au survol pour indiquer que c'est cliquable */
+          /* Autres styles au survol si nécessaire */
+        }
+        
       .about img
       {
           width: 450px;
           height: auto;
           border-radius: 50%;
-
+      
       }
       .content
       {
@@ -131,7 +154,7 @@
           left: 23%;
           transform: translate(-50%);
         background-color: ;
-
+      
       }
       h1{
           color: rgba(174, 41, 174, 0.8);
@@ -142,21 +165,21 @@
       h3{
        font-size: 25px;
        margin-bottom: 20px;
-
+      
       }
       h4{
-
+      
            color: black;
            letter-spacing: 1px;
            font-size: 20px;
-
+      
       }
       .newslatter form
       {
        width: 380px;
        max-width: 100%;
        position: relative;
-
+      
       }
       .newslatter  form input:first-child{
       display: inline-block;
@@ -176,22 +199,22 @@
        background-color: rgba(174, 41, 174, 0.8);
        color: aliceblue;
       box-shadow:  0px 0px 5px #000,0px 0px 15px #858585;
-
+      
       }
-
-
-
-
-
+      
+      
+      
+      
+      
       .about
       {
           width:auto;
           height:auto;
           padding: 100px 5px;
           background-color:#e4e4eb;
-
+      
       }
-
+      
       .about-text
       {
           width: 600px;
@@ -200,12 +223,12 @@
           margin-left: 5%;
           font-style: italic;
       }
-
+      
       .about img {
           width: 40%;
           height: auto;
           border-radius: 50%;
-
+      
       }
       /*.about {
           width: 100%;
@@ -213,20 +236,20 @@
           display: inline-block;
           align-items: center;
       }
-
+      
       .about-text {
           margin-left: 2px; /* Ajoutez une marge à gauche pour l'espace entre l'image et le texte
           font-family: 'kalnia', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
           color: rgba(204, 194, 194, 0.71);
           width: 75%;
       }
-
+      
       .about img {
           width: 30%;
           height: auto;
           border-radius: 50%;
       }*/
-
+      
       .main
       {  width: 1130px;
           max-width: 100%;
@@ -235,65 +258,69 @@
           align-items: center;
           justify-content: space-around;
           margin: 25 auto;
-
-
+      
+      
       }
-
+      
       .about-text h2{
           color: rgba(174, 41, 174, 0.8);
           font-family: 'lucida calibria';
           margin-bottom: 8px;
           margin-top: 2%;
-
+      
       }
-
+      
       .derniere
       {
           background-image: url(#);
       }
-
-    
-.tout
-{
-    background-color:#e4e4eb;
-    width: 100%;
-    padding-top: 15px 0px;
-    padding-bottom: 80px;
-}
-.box
-{
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 400px;
-}
-.card
-{
-    height: 300px;
-    width: 335px;
-    padding: 20px 35px;
-    background:#e4e4eb;
-    border:solid;
-    border-color: rgb(182, 172, 160);
-    box-shadow:0 4px 8px rgba(174, 41, 174, 0.8) ;
-    border-radius: 20px;
-    margin: 25px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-
-}
-.card h2{
-    color: rgba(174, 41, 174, 0.8);
-}
-.tout.box .card h2 img
-{
-    
-}
-
+      
+      .tout
+      {
+      background-color:#e4e4eb;
+      width: 100%;
+      padding-top: 15px 0px;
+      padding-bottom: 100px;
+      }
+      .box
+      {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+      }
+      .card
+      {
+      height: 300px;
+      width: 335px;
+      padding: 20px 35px;
+      background:#e4e4eb;
+      border:solid;
+      border-color: rgb(182, 172, 160);
+      box-shadow:0 4px 8px rgba(174, 41, 174, 0.8) ;
+      border-radius: 20px;
+      margin: 25px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      
+      }
+      .card h2{
+      color: rgba(174, 41, 174, 0.8);
+      }
+      .card img {
+          width: 250px;
+          height: auto;
+          border-radius: 55%;
+          border: 2%;
+          border-color: antiquewhite;
+        }
+      
+      
+      
       #bouton
       {
-
+      
           color: rgb(181, 153, 153);
           background-color:rgba(174, 41, 174, 0.8);
           text-decoration: none;
@@ -306,7 +333,140 @@ min-height: 400px;
           left: 2%;
           box-shadow:  0px 0px 5px #000,0px 0px 15px #858585;
       }
-    </style>
+      
+      
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        #cv-container {
+          display: flex;
+          max-width: 98%;
+          min-height: 100vh;
+          margin: 50px auto;
+          background-color: #f9f9ff;
+        }
+    
+        #left-section {
+          flex: 2;
+          padding: 20px;
+          border-right: 2px solid #aeb09e;
+        }
+    
+        #right-section {
+          flex: 1;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        h1, h2 {
+          color: rgba(174, 41, 174, 0.8);
+        }
+    
+        p {
+          margin-bottom: 10px;
+        }
+    
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+    
+        li {
+          margin-bottom: 5px;
+        }
+    
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+        }
+    
+        #contact-info {
+          margin-top: 20px;
+          text-align: center;
+        }
+    
+        #contact-info i {
+          font-size: 24px;
+          margin-right: 5px;
+          color: rgba(174, 41, 174, 0.8);
+        }
+        form {
+      max-width: 400px;
+      margin: 50px auto;
+    }
+
+    input, button {
+      margin-bottom: 10px;
+    }
+    #download-btn {
+      cursor: pointer;
+      color: white;
+      background-color: rgba(174, 41, 174, 0.8);
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+    
+      border-radius: 15px ;
+      transition: transform .4s;
+      position: relative;
+      left: 75%; /* Utiliser 'auto' pour laisser la position horizontale être déterminée par la largeur du bouton */
+     width: 15%;
+      top: -7%;
+      box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    }
+      nav
+      {
+      
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 45px;
+          padding-left: 8%;
+          padding-right: 8%;
+      }
+      nav ul li
+      {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 15px ;
+      }
+      nav ul li a
+      {
+       color:rgba(174, 41, 174, 0.8) ;
+       text-decoration:  none;
+      text-transform: capitalize;
+      
+      }
+      nav ul li  a:hover
+      { color:  #fd04a27e;
+      
+      }
+      
+      
+      .logo
+      {
+          color:;
+          font-size: 35px;
+          letter-spacing: 0.01px;
+          cursor: pointer;
+          transition: 4s;
+      
+      }
+      span
+      {
+      color:rgba(174, 41, 174, 0.8);
+      text-decoration:  none;
+      text-transform: capitalize;
+      
+      }
+      
+      </style>
 
     <script>
       document

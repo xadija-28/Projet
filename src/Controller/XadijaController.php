@@ -15,4 +15,24 @@ class XadijaController extends AbstractController
             'controller_name' => 'XadijaController',
         ]);
     }
+    #[Route('/Cv', name: 'app_Cv')]
+    public function Cv(): Response
+    {
+        return $this->render('xadija/Cv.html.twig', [
+            'controller_name' => 'XadijaController',
+        ]);
+    }
+
+
+    #[Route('/portfolio', name: 'app_portfolio')]
+    public function portfolio(): Response
+    {
+        return $this->render('xadija/portfolio.html.twig', [
+            'controller_name' => 'XadijaController',
+        ]);
+        
+    }
+
+
 }
+ 
