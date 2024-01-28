@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre Page avec des Blocs</title>
+    <!-- Inclure votre CSS ici -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../public/css/Fichier CSS P1.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #e4e4eb; /* Couleur de fond de votre page */
+      }
+
+      h1 {
+        color: rgba(174, 41, 174, 0.8); /* Couleur du titre */
+      }
+
+      .block {
+        background-color: #e4e4eb; /* Couleur de fond des blocs */
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .block h2 {
+        text-align: center;
+        color: rgba(174, 41, 174, 0.8); /* Couleur du texte du titre du bloc */
+        margin-bottom: 10px;
+      }
+
+      .icon {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+      nav ul li a .lien {
+        color: rgba(174, 41, 174, 0.8);
+        text-decoration: none;
+        text-transform: capitalize;
+        size: 5px;
+      }
+      .menu2 {
+        text-align: center; /* Aligner le texte à droite */
+      }
+
+      nav ul {
+        margin-right: 100px; /* Ajouter une marge à droite pour déplacer le menu vers la droite */
+      }
+
+      .lien {
+        font-size: 18px; /* Ajuster la taille de la police */
+        margin-right: 20px; /* Ajouter une marge à droite entre les liens */
+      }
+
+      .btn {
+        font-size: 18px; /* Ajuster la taille de la police du bouton "En savoir plus" */
+      }
+      ul li{
+
+        list-style-type: none;
+        text-decoration:  none;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./eportfolio/index.html.twig">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio de Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <h1>Mon Portfolio</h1>
+
+    <!-- Bloc Administer -->
+    <div class="block">
+      <h2><i class="icon fas fa-cogs"></i> Administer les reseaux et l'internet</h2>
+      <!-- Espace pour remplir les informations -->
+      <ul>
+        <li>Configurer les fonctions de base du reseau local:Adresse IPV4</li>
+        <li>Modifier les disfonctionnements du reseau local</li>
+        <li>Configuration admistration Switch </li>
+        <li>Configuration de Vlans</li>
+        <li>Installer des Postes Clients</li>
+        <li>Maitriser les roles et les principes fondamentaux des systems d'exploitation adin d'interagir avec ceux-ci pour la configuration et administration des reseaux et services fournis  </li>
+  
+  
+  
+      </ul>
+    </div>
+
+    <!-- Bloc Connecter -->
+    <div class="block">
+      <h2><i class="icon fas fa-sign-in-alt"></i> Connecter</h2>
+      <!-- Espace pour remplir les informations -->
+      <ul>
+        <li>Mesures d'Amplitude ,Periode, Dephasage de Signaux </li>
+        <li>Maitrises des dispositifs de Transmission</li>
+        <li>Etudes de Fonctions </li>
+        <li>Communication en Anglais </li>
+        <li>Etablir un reseau MPM,PERT,GANT</li>
+      </ul>
+    </div>
+
+    <!-- Bloc Créer des outils -->
+    <div class="block">
+      <h2><i class="icon fas fa-wrench"></i> Créer des outils</h2>
+      <ul>
+        <li>Utiliser un systeme Informatique (matrise des logiciels Vscode ,notepad++,spyder)</li>
+        <li>Lire et executer un programme </li>
+        <li>creer un programme en python </li>
+        <li>Resolution des Erreurs </li>
+        
+      </ul>
+    </div>
+  </body>
+</html>

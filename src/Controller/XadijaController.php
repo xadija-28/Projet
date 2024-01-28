@@ -32,6 +32,14 @@ class XadijaController extends AbstractController
         ]);
         
     }
+    #[Route('/Formulaire', name: 'app_portfolio')]
+    public function Formulaire(): Response
+    {
+        return $this->render('xadija/Formulaire.html.twig', [
+            'controller_name' => 'XadijaController',
+        ]);
+        
+    }
 
 
 }
