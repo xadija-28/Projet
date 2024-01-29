@@ -22,15 +22,12 @@ class XadijaController extends AbstractController
             'controller_name' => 'XadijaController',
         ]);
     }
-
-
     #[Route('/portfolio', name: 'app_portfolio')]
     public function portfolio(): Response
     {
         return $this->render('xadija/portfolio.html.twig', [
             'controller_name' => 'XadijaController',
         ]);
-        
     }
     #[Route('/Formulaire', name: 'app_portfolio')]
     public function Formulaire(): Response
@@ -38,9 +35,7 @@ class XadijaController extends AbstractController
         return $this->render('xadija/Formulaire.html.twig', [
             'controller_name' => 'XadijaController',
         ]);
-        
     }
-
 
 }
  
